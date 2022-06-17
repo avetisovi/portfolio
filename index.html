@@ -16,19 +16,19 @@
 <body>
   <header class="header">
     <a class="header__title" href="#intro">Anatoli Avetisovi</a>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#about" class="navigation__link">about</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">projects</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">contact</a>
-          </li>
-        </ul>
-      </nav>
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#about" class="navigation__link">about</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#projects" class="navigation__link">projects</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">contact</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   <section class="intro" id="intro">
     <h1 class="intro__title">Anatoli Avetisovi</h1>
@@ -38,67 +38,155 @@
   <section class="about" id="about">
     <div class="container">
       <div class="about__inner">
-        <h2 class="about__title section__title">About me</h2>
+        <h2 class="section__title">About me</h2>
         <div class="about__text">
-          <p>As a child I always had an affinity for tech and computers. adding mods to games, digging into hardware and always exploring os for some details at a young age were some of the things that made me proficient with technologies.</p>
-          <p>Today I'm enthralled by web development, creating new products, experiences and designs, always keeping an eye out for details to enhance the user experience better.</p>
+          <p>As a child I always had an affinity for tech and computers. adding mods to games, digging into hardware and
+            always exploring OS for some details at a young age were some of the things that made me proficient with
+            technologies.</p>
+          <p>Today I'm enthralled by web development, creating new products, experiences and designs, always keeping an
+            eye out for details to enhance the user experience better.</p>
           <p>I work with React JavaScript (ES6+), CSS and HTML to deliver quality front-end products.</p>
         </div>
+        <ul class="about__skills">
+          <li class="about__skill">
+            <div class="about__skill-img">
+              <img src="images/skills/html5.svg" alt="html logo">
+            </div>
+            <h3 class="about__skill-title">html</h3>
+          </li>
+          <li class="about__skill">
+            <div class="about__skill-img">
+              <img src="images/skills/css3.svg" alt="css logo">
+            </div>
+            <h3 class="about__skill-title">css</h3>
+          </li>
+          <li class="about__skill">
+            <div class="about__skill-img">
+              <img src="images/skills/js.svg" alt="javascript logo">
+            </div>
+            <h3 class="about__skill-title">javascript</h3>
+          </li>
+          <li class="about__skill">
+            <div class="about__skill-img">
+              <img src="images/skills/sass.svg" alt="sass logo">
+            </div>
+            <h3 class="about__skill-title">sass</h3>
+          </li>
+          <li class="about__skill">
+            <div class="about__skill-img">
+              <img src="images/skills/react.svg" alt="react logo">
+            </div>
+            <h3 class="about__skill-title">react</h3>
+          </li>
+          <li class="about__skill">
+            <div class="about__skill-img">
+              <img src="images/skills/jest.png" alt="jest logo">
+            </div>
+            <h3 class="about__skill-title">jest</h3>
+          </li>
+          <li class="about__skill">
+            <div class="about__skill-img">
+              <img src="images/skills/git.svg" alt="git logo">
+            </div>
+            <h3 class="about__skill-title">git</h3>
+          </li>
+          <li class="about__skill">
+            <div class="about__skill-img">
+              <img src="images//skills/webpack.svg" alt="webpack logo">
+            </div>
+            <h3 class="about__skill-title">webpack</h3>
+          </li>
+          <li class="about__skill">
+            <div class="about__skill-img">
+              <img src="images/skills/npm.png" alt="npm logo">
+            </div>
+            <h3 class="about__skill-title">npm</h3>
+          </li>
+        </ul>
       </div>
-      <ul class="about__skills">
-        <li class="about__skill">
-          <div class="about__skill-img">
-            <img src="images/html5.svg" alt="html logo">
-          </div>
-          <h3 class="about__skill-title">html</h3>
-        </li>
-        <li class="about__skill">
-          <div class="about__skill-img">
-            <img src="images/css3.svg" alt="css logo">
-          </div>
-          <h3 class="about__skill-title">css</h3>
-        </li>
-        <li class="about__skill">
-          <div class="about__skill-img">
-            <img src="images/js.svg" alt="javascript logo">
-          </div>
-          <h3 class="about__skill-title">javascript</h3>
-        </li>
-        <li class="about__skill">
-          <div class="about__skill-img">
-            <img src="images/sass.svg" alt="sass logo">
-          </div>
-          <h3 class="about__skill-title">sass</h3>
-        </li>
-        <li class="about__skill">
-          <div class="about__skill-img">
-            <img src="images/react.svg" alt="react logo">
-          </div>
-          <h3 class="about__skill-title">react</h3>
-        </li>
-        <li class="about__skill">
-          <div class="about__skill-img">
-            <img src="images/jest.png" alt="jest logo">
-          </div>
-          <h3 class="about__skill-title">jest</h3>
-        </li>
-        <li class="about__skill">
-          <div class="about__skill-img">
-            <img src="images/git.svg" alt="git logo">
-          </div>
-          <h3 class="about__skill-title">git</h3>
-        </li>
-        <li class="about__skill">
-          <img src="images/webpack.svg" alt="webpack logo" class="about__skill-img">
-          <h3 class="about__skill-title">webpack</h3>
-        </li>
-        <li class="about__skill">
-          <div class="about__skill-img">
-            <img src="images/npm.png" alt="npm logo">
-          </div>
-          <h3 class="about__skill-title">npm</h3>
-        </li>
-      </ul>
+    </div>
+  </section>
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="projects__inner">
+        <h2 class="section__title">Projects</h2>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <div class="projects__item-content">
+              <h3 class="projects__item-title">Weather App</h3>
+              <p class="projects__item-description">Web-site that allows to see weather of typed location or current
+                one. Built using webpack</p>
+              <div class="projects__item-links">
+                <a target="_blank" href="https://tolikatolika123.github.io/weather-app/" class="projects__item-link">
+                  Live Preview
+
+                </a>
+                <a target="_blank" href="https://github.com/TolikaTolika123/weather-app" class="projects__item-link">
+                  GitHub Repo
+
+                </a>
+              </div>
+            </div>
+            <div class="projects__item-img">
+              <img src="images/projects/weather-app.jpg" alt="project screenshot">
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="projects__item-content">
+              <h3 class="projects__item-title">Instagram clone</h3>
+              <p class="projects__item-description">Clone of popular social network - Instagram. Built using React and
+                Firebase</p>
+              <div class="projects__item-links">
+                <a target="_blank" href="https://instagram-clone-bffad.web.app/" class="projects__item-link">
+                  Live Preview
+                </a>
+                <a target="_blank" href="https://github.com/TolikaTolika123/instagram-clone" class="projects__item-link">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+            <div class="projects__item-img">
+              <img src="images/projects/instagram-clone.jpg" alt="project screenshot">
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="projects__item-content">
+              <h3 class="projects__item-title">ToDo List</h3>
+              <p class="projects__item-description">Web-site that allows to create projects and todos form them, store
+                todos by date and save them with google account or localstorage. Built using Webpack and Firebase </p>
+              <div class="projects__item-links">
+                <a target="_blank" href="https://todo-list-2a7c3.web.app/" class="projects__item-link">
+                  Live Preview
+                </a>
+                <a target="_blank" href="https://github.com/TolikaTolika123/todo-list" class="projects__item-link">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+            <div class="projects__item-img">
+              <img src="images/projects/todo-list.jpg" alt="project screenshot">
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="projects__item-content">
+              <h3 class="projects__item-title">CV application</h3>
+              <p class="projects__item-description">web-site using which user can easily create CV and print it. Buit
+                using React</p>
+              <div class="projects__item-links">
+                <a target="_blank" href="https://tolikatolika123.github.io/cv-application/" class="projects__item-link">
+                  Live Preview
+                </a>
+                <a target="_blank" href="https://github.com/TolikaTolika123/cv-application" class="projects__item-link">
+                  GitHub Repo
+                </a>
+              </div>
+            </div>
+            <div class="projects__item-img">
+              <img src="images/projects/cv.jpg" alt="project screenshot">
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
   <script src="js/index.js"></script>

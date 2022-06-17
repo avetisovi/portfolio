@@ -1,3 +1,5 @@
+/* root styels */
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -12,6 +14,28 @@ body {
   padding: 0 30px;
 }
 
+.section__title {
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  width: fit-content;
+  text-align: center;
+  position: relative;
+}
+
+.section__title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  height: 2px;
+}
+
+/* header start */
+
 .header {
   position: fixed;
   top: 0;
@@ -20,6 +44,17 @@ body {
   text-align: right;
   padding: 30px 40px;
   z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: .5s color ease-in-out;
 }
 
 .navigation__list {
@@ -31,12 +66,29 @@ body {
   gap: 30px;
 }
 
+.navigation__item {
+  transition: transform .2s ease-in-out;
+}
+
+.navigation__item:hover {
+  transform: scale(1.1);
+}
+
 .navigation__link {
   color: #fff;
   text-decoration: none;
   font-weight: 300;
   font-size: 1.3rem;
+  transition: .5s color ease-in-out;
 }
+
+.header.active .navigation__link,
+.header.active .header__title {
+  color: #000;
+}
+
+/* header end */
+/* intro start */
 
 .intro {
   background: url(../images/intro-bg.jpg) no-repeat center top;
@@ -55,6 +107,7 @@ body {
   font-size: 3rem;
   font-weight: 500;
 }
+
 .intro__subtitle {
   margin: 0;
   font-size: 1.5rem;
@@ -69,6 +122,57 @@ body {
 }
 
 .intro__arrow-down img {
+  display: block;
   width: 30px;
   height: 30px;
+  transition: transform .2s ease-in-out;
+}
+
+.intro__arrow-down img:hover {
+  transform: scale(1.2);
+}
+
+/* intro end */
+
+.about {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about__title {
+  margin-bottom: 50px;
+}
+
+.about__text {
+  margin: 0 auto 100px;
+  max-width: 1000px;
+  color: #868585;
+}
+
+.about__skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.about__skill-img  {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.about__skill-img img {
+  width: 100%;
+  height: auto;
+}
+
+.about__skill-title {
+  margin: 0;
 }

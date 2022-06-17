@@ -15,10 +15,11 @@
 
 <body>
   <header class="header">
+    <a class="header__title" href="#intro">Anatoli Avetisovi</a>
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link">about</a>
+            <a href="#about" class="navigation__link">about</a>
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link">projects</a>
@@ -29,10 +30,76 @@
         </ul>
       </nav>
   </header>
-  <section class="intro">
+  <section class="intro" id="intro">
     <h1 class="intro__title">Anatoli Avetisovi</h1>
     <p class="intro__subtitle">Front-end developer</p>
-    <a href="#" class="intro__arrow-down"><img src="images/arrow-down.svg" alt="skip to about section"></a>
+    <a href="#about" class="intro__arrow-down"><img src="images/arrow-down.svg" alt="skip to about section"></a>
+  </section>
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__inner">
+        <h2 class="about__title section__title">About me</h2>
+        <div class="about__text">
+          <p>As a child I always had an affinity for tech and computers. adding mods to games, digging into hardware and always exploring os for some details at a young age were some of the things that made me proficient with technologies.</p>
+          <p>Today I'm enthralled by web development, creating new products, experiences and designs, always keeping an eye out for details to enhance the user experience better.</p>
+          <p>I work with React JavaScript (ES6+), CSS and HTML to deliver quality front-end products.</p>
+        </div>
+      </div>
+      <ul class="about__skills">
+        <li class="about__skill">
+          <div class="about__skill-img">
+            <img src="images/html5.svg" alt="html logo">
+          </div>
+          <h3 class="about__skill-title">html</h3>
+        </li>
+        <li class="about__skill">
+          <div class="about__skill-img">
+            <img src="images/css3.svg" alt="css logo">
+          </div>
+          <h3 class="about__skill-title">css</h3>
+        </li>
+        <li class="about__skill">
+          <div class="about__skill-img">
+            <img src="images/js.svg" alt="javascript logo">
+          </div>
+          <h3 class="about__skill-title">javascript</h3>
+        </li>
+        <li class="about__skill">
+          <div class="about__skill-img">
+            <img src="images/sass.svg" alt="sass logo">
+          </div>
+          <h3 class="about__skill-title">sass</h3>
+        </li>
+        <li class="about__skill">
+          <div class="about__skill-img">
+            <img src="images/react.svg" alt="react logo">
+          </div>
+          <h3 class="about__skill-title">react</h3>
+        </li>
+        <li class="about__skill">
+          <div class="about__skill-img">
+            <img src="images/jest.png" alt="jest logo">
+          </div>
+          <h3 class="about__skill-title">jest</h3>
+        </li>
+        <li class="about__skill">
+          <div class="about__skill-img">
+            <img src="images/git.svg" alt="git logo">
+          </div>
+          <h3 class="about__skill-title">git</h3>
+        </li>
+        <li class="about__skill">
+          <img src="images/webpack.svg" alt="webpack logo" class="about__skill-img">
+          <h3 class="about__skill-title">webpack</h3>
+        </li>
+        <li class="about__skill">
+          <div class="about__skill-img">
+            <img src="images/npm.png" alt="npm logo">
+          </div>
+          <h3 class="about__skill-title">npm</h3>
+        </li>
+      </ul>
+    </div>
   </section>
   <script src="js/index.js"></script>
 </body>

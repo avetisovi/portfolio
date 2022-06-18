@@ -1,9 +1,11 @@
 /* root styels */
+:root {
+  font-size: 16px;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 16px;
   margin: 0;
   padding: 0;
 }
@@ -45,6 +47,7 @@ body {
   z-index: 1;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__title {
@@ -54,6 +57,25 @@ body {
   font-size: 1.5rem;
   text-decoration: none;
   transition: .5s color ease-in-out;
+  z-index: 1;
+}
+
+.navigation__btn {
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.navigation__btn svg {
+  fill: #fff;
+  width: 35px;
+  height: 35px;
+}
+
+.navigation__btn.black svg {
+  fill: #000;
 }
 
 .navigation__list {
@@ -63,6 +85,25 @@ body {
   display: flex;
   justify-content: end;
   gap: 30px;
+  position: relative;
+  transition: transform .5s ease-in-out;
+}
+
+.navigation__close {
+  border: 0;
+  background-color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.navigation__close img {
+  width: 30px;
+  height: 30px;
+  display: block;
 }
 
 .navigation__item {
@@ -151,6 +192,7 @@ body {
   padding: 0;
   margin: 0;
   list-style: none;
+  overflow: hidden;
 }
 
 .about__skill-img  {
@@ -298,4 +340,71 @@ body {
 .footer__social-img {
   width: 40px;
   height: 40px;
+}
+/* footer end */
+
+/* responsiveness */
+
+@media (max-width: 768px) {
+  .header__title.black {
+    color: #000;
+  }
+  .navigation__list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-100%);
+    background-color: #f3f5fa;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation__link {
+    color: #000;
+    font-size: 3rem;
+  }
+  .navigation__list.active {
+    transform: translate(0);
+  }
+  .navigation__close {
+    display: block;
+  }
+  .navigation__btn {
+    display: block;
+  }
+
+  .projects__item {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .projects__item-content {
+    width: 100%;
+  }
+  .projects__item-img {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 12px;
+  }
+  .about__text {
+    font-size: 1.5rem;
+  }
+  .projects__item-description {
+    font-size: 1.2rem;
+  }
+  .projects__item-link {
+    font-size: 1.2rem;
+  }
+  .about, .projects {
+    padding: 50px 0;
+  }
+  .footer__text {
+    margin-bottom: 30px;
+  }
 }

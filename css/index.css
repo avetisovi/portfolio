@@ -186,13 +186,13 @@ body {
 
 .about__skills {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 50px;
   padding: 0;
   margin: 0;
   list-style: none;
-  overflow: hidden;
 }
 
 .about__skill-img  {
@@ -394,6 +394,14 @@ body {
   }
   .about__text {
     font-size: 1.5rem;
+  }
+  .about__skills {
+    gap: 25px;
+  }
+  .about__skill-img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
   }
   .projects__item-description {
     font-size: 1.2rem;

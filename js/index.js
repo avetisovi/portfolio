@@ -1,14 +1,16 @@
-const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 const header = document.querySelector('header')
 const menuOpenBtn = document.querySelector('.navigation__btn')
 const menuCloseBtn = document.querySelector('.navigation__close')
 const navigationList = document.querySelector('.navigation__list')
 const headerTitle = document.querySelector('.header__title')
 const navigationLinks = document.querySelectorAll('.navigation__link')
+const prev  = document.querySelector('.about__skills-prev');
+const next = document.querySelector('.about__skills-next');
+const skills = document.querySelector('.about__skills')
+
+const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 
 // navigation menu toggle
-
-
 const showMenu = () => {
   navigationList.classList.add('active')
   headerTitle.classList.add('black')

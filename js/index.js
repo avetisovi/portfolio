@@ -23,6 +23,7 @@ const hideMenu = () => {
 
 menuOpenBtn.addEventListener('click', showMenu)
 menuCloseBtn.addEventListener('click', hideMenu)
+headerTitle.addEventListener('click', hideMenu)
 navigationLinks.forEach(navLink => navLink.addEventListener('click', hideMenu))
 
 // changing header text color after user reaches about section

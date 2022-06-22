@@ -1,3 +1,4 @@
+const body = document.querySelector('body')
 const header = document.querySelector('header')
 const menuOpenBtn = document.querySelector('.navigation__btn')
 const menuCloseBtn = document.querySelector('.navigation__close')
@@ -12,11 +13,13 @@ const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeig
 
 // navigation menu toggle
 const showMenu = () => {
+  body.style.visibility = 'hidden'
   navigationList.classList.add('active')
   headerTitle.classList.add('black')
 }
 
 const hideMenu = () => {
+  body.style.visibility = 'visible'
   navigationList.classList.remove('active')
   headerTitle.classList.remove('black')
 }

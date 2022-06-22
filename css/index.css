@@ -58,6 +58,7 @@ body {
   text-decoration: none;
   transition: .5s color ease-in-out;
   z-index: 1;
+  visibility: visible;
 }
 
 .navigation__btn {
@@ -86,7 +87,7 @@ body {
   justify-content: end;
   gap: 30px;
   position: relative;
-  transition: transform .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .navigation__close {
@@ -360,6 +361,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    visibility: hidden;
   }
   .navigation__link {
     color: #000;
@@ -367,6 +369,7 @@ body {
   }
   .navigation__list.active {
     transform: translate(0);
+    visibility: visible;
   }
   .navigation__close {
     display: block;

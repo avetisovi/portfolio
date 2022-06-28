@@ -1,6 +1,6 @@
 # Portfolio
 
-### [Live Demo](https://tolikatolika123.github.io/portfolio/)
+### [Live Demo](https://anatoliavetisovi.netlify.app/)
 
 ## Personal portfolio web-site which includes:
  1. Information about me

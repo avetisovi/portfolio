@@ -182,7 +182,7 @@ body {
 .about__text {
   margin: 0 auto 100px;
   max-width: 1000px;
-  color: #868585;
+  color: #ADADAD;
 }
 
 .about__skills {
@@ -254,6 +254,11 @@ body {
 .projects__item-description {
   max-width: 300px;
   margin: 0 0 40px;
+}
+
+.projects__item-description a {
+  color: #0066CC;
+  text-decoration: none;
 }
 
 .projects__item-links {

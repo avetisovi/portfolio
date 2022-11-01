@@ -56,7 +56,7 @@ body {
   font-weight: 500;
   font-size: 1.5rem;
   text-decoration: none;
-  transition: .5s color ease-in-out;
+  transition: 0.5s color ease-in-out;
   z-index: 1;
   visibility: visible;
 }
@@ -87,7 +87,7 @@ body {
   justify-content: end;
   gap: 30px;
   position: relative;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .navigation__close {
@@ -108,7 +108,7 @@ body {
 }
 
 .navigation__item {
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .navigation__item:hover {
@@ -120,7 +120,7 @@ body {
   text-decoration: none;
   font-weight: 300;
   font-size: 1.3rem;
-  transition: .5s color ease-in-out;
+  transition: 0.5s color ease-in-out;
 }
 
 .header.active .navigation__link,
@@ -165,7 +165,7 @@ body {
   display: block;
   width: 30px;
   height: 30px;
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 
 .intro__arrow-down img:hover {
@@ -180,9 +180,10 @@ body {
 }
 
 .about__text {
+  font-size: 1.2rem;
   margin: 0 auto 100px;
   max-width: 1000px;
-  color: #ADADAD;
+  color: #6e6e6e;
 }
 
 .about__skills {
@@ -196,7 +197,7 @@ body {
   list-style: none;
 }
 
-.about__skill-img  {
+.about__skill-img {
   width: 75px;
   height: 75px;
   display: flex;
@@ -257,7 +258,7 @@ body {
 }
 
 .projects__item-description a {
-  color: #0066CC;
+  color: #0066cc;
   text-decoration: none;
 }
 
@@ -268,7 +269,7 @@ body {
 }
 
 .projects__item-link {
-  color: #0066CC;
+  color: #0066cc;
   text-decoration: none;
 }
 
@@ -278,7 +279,9 @@ body {
 
 .projects__item-img {
   width: 45%;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .projects__item-img img {
@@ -393,7 +396,6 @@ body {
   .projects__item-img {
     width: 100%;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -417,7 +419,8 @@ body {
   .projects__item-link {
     font-size: 1.2rem;
   }
-  .about, .projects {
+  .about,
+  .projects {
     padding: 50px 0;
   }
   .footer__text {

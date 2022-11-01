@@ -1,250 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio Web-site" />
+    <title>Anatoli Avetisovi</title>
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio Web-site">
-  <title>Anatoli Avetisovi</title>
-  <link rel="icon" type="image/png" href="images/icon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/index.css">
-</head>
-
-<body>
-  <header class="header">
-    <a class="header__title" href="#intro">A. A.</a>
-    <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a href="#about" class="navigation__link">about</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#projects" class="navigation__link">projects</a>
-        </li>
-        <li class="navigation__item">
-          <a href="#footer" class="navigation__link">contact</a>
-        </li>
-        <button class="navigation__close"><img src="images/close.svg" alt="close navigation"></button>
-      </ul>
-      <button class="navigation__btn" type="button">
-        <svg height="32px" id="Layer_1" style="enable-background:new 0 0 32 32;" version="1.1" viewBox="0 0 32 32"
-          width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink">
-          <path
-            d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z" />
-        </svg>
-      </button>
-    </nav>
-  </header>
-  <section class="intro" id="intro">
-    <h1 class="intro__title">Anatoli Avetisovi</h1>
-    <p class="intro__subtitle">Front-end developer</p>
-    <a href="#about" class="intro__arrow-down"><img src="images/arrow-down.svg" alt="skip to about section"></a>
-  </section>
-  <section class="about" id="about">
-    <div class="container">
-      <div class="about__inner">
-        <h2 class="section__title">About me</h2>
-        <div class="about__text">
-          <p>I am Anatoli, 16 years old front-end developer. I always had an affinity to tech but got into web-development only about a year and a half ago and now want to test my skills in commercial field.</p>
-          <p>I work with React JavaScript (ES6+), CSS and HTML to create front-end projects</p>
+  <body>
+    <header class="header">
+      <a class="header__title" href="#intro">A. A.</a>
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#about" class="navigation__link">about</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#projects" class="navigation__link">projects</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#footer" class="navigation__link">contact</a>
+          </li>
+          <button class="navigation__close">
+            <img src="images/close.svg" alt="close navigation" />
+          </button>
+        </ul>
+        <button class="navigation__btn" type="button">
+          <svg
+            height="32px"
+            id="Layer_1"
+            style="enable-background: new 0 0 32 32"
+            version="1.1"
+            viewBox="0 0 32 32"
+            width="32px"
+            xml:space="preserve"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <path
+              d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <section class="intro" id="intro">
+      <h1 class="intro__title">Anatoli Avetisovi</h1>
+      <p class="intro__subtitle">Front-end developer</p>
+      <a href="#about" class="intro__arrow-down"
+        ><img src="images/arrow-down.svg" alt="skip to about section"
+      /></a>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <h2 class="section__title">About me</h2>
+          <div class="about__text">
+            <p>
+              I am Anatoli, front-end developer. Starting as a hobby during
+              lockdown, web-development became my passion. During one and a half
+              year of my education I have built some decent personal projects
+              and now want to test my skills in commercial field.
+            </p>
+            <p>
+              I work with React JavaScript (ES6+), CSS and HTML to create
+              front-end projects
+            </p>
+          </div>
+          <ul class="about__skills">
+            <li class="about__skill">
+              <div class="about__skill-img">
+                <img src="images/skills/html5.svg" alt="html logo" />
+              </div>
+              <h3 class="about__skill-title">html</h3>
+            </li>
+            <li class="about__skill">
+              <div class="about__skill-img">
+                <img src="images/skills/css3.svg" alt="css logo" />
+              </div>
+              <h3 class="about__skill-title">css</h3>
+            </li>
+            <li class="about__skill">
+              <div class="about__skill-img">
+                <img src="images/skills/js.svg" alt="javascript logo" />
+              </div>
+              <h3 class="about__skill-title">javascript</h3>
+            </li>
+            <li class="about__skill">
+              <div class="about__skill-img">
+                <img src="images/skills/sass.svg" alt="sass logo" />
+              </div>
+              <h3 class="about__skill-title">sass</h3>
+            </li>
+            <li class="about__skill">
+              <div class="about__skill-img">
+                <img src="images/skills/react.svg" alt="react logo" />
+              </div>
+              <h3 class="about__skill-title">react</h3>
+            </li>
+            <li class="about__skill">
+              <div class="about__skill-img">
+                <img src="images/skills/jest.png" alt="jest logo" />
+              </div>
+              <h3 class="about__skill-title">jest</h3>
+            </li>
+            <li class="about__skill">
+              <div class="about__skill-img">
+                <img src="images/skills/git.svg" alt="git logo" />
+              </div>
+              <h3 class="about__skill-title">git</h3>
+            </li>
+            <li class="about__skill">
+              <div class="about__skill-img">
+                <img src="images//skills/webpack.svg" alt="webpack logo" />
+              </div>
+              <h3 class="about__skill-title">webpack</h3>
+            </li>
+            <li class="about__skill">
+              <div class="about__skill-img">
+                <img src="images/skills/npm.png" alt="npm logo" />
+              </div>
+              <h3 class="about__skill-title">npm</h3>
+            </li>
+            <li class="about__skill">
+              <div class="about__skill-img">
+                <img src="images/skills/firebase.svg" alt="firebase logo" />
+              </div>
+              <h3 class="about__skill-title">firebase</h3>
+            </li>
+          </ul>
         </div>
-        <ul class="about__skills">
-          <li class="about__skill">
-            <div class="about__skill-img">
-              <img src="images/skills/html5.svg" alt="html logo">
-            </div>
-            <h3 class="about__skill-title">html</h3>
-          </li>
-          <li class="about__skill">
-            <div class="about__skill-img">
-              <img src="images/skills/css3.svg" alt="css logo">
-            </div>
-            <h3 class="about__skill-title">css</h3>
-          </li>
-          <li class="about__skill">
-            <div class="about__skill-img">
-              <img src="images/skills/js.svg" alt="javascript logo">
-            </div>
-            <h3 class="about__skill-title">javascript</h3>
-          </li>
-          <li class="about__skill">
-            <div class="about__skill-img">
-              <img src="images/skills/sass.svg" alt="sass logo">
-            </div>
-            <h3 class="about__skill-title">sass</h3>
-          </li>
-          <li class="about__skill">
-            <div class="about__skill-img">
-              <img src="images/skills/react.svg" alt="react logo">
-            </div>
-            <h3 class="about__skill-title">react</h3>
-          </li>
-          <li class="about__skill">
-            <div class="about__skill-img">
-              <img src="images/skills/jest.png" alt="jest logo">
-            </div>
-            <h3 class="about__skill-title">jest</h3>
-          </li>
-          <li class="about__skill">
-            <div class="about__skill-img">
-              <img src="images/skills/git.svg" alt="git logo">
-            </div>
-            <h3 class="about__skill-title">git</h3>
-          </li>
-          <li class="about__skill">
-            <div class="about__skill-img">
-              <img src="images//skills/webpack.svg" alt="webpack logo">
-            </div>
-            <h3 class="about__skill-title">webpack</h3>
-          </li>
-          <li class="about__skill">
-            <div class="about__skill-img">
-              <img src="images/skills/npm.png" alt="npm logo">
-            </div>
-            <h3 class="about__skill-title">npm</h3>
-          </li>
-          <li class="about__skill">
-            <div class="about__skill-img">
-              <img src="images/skills/firebase.svg" alt="firebase logo">
-            </div>
-            <h3 class="about__skill-title">firebase</h3>
-          </li>
-        </ul>
       </div>
-    </div>
-  </section>
-  <section class="projects" id="projects">
-    <div class="container">
-      <div class="projects__inner">
-        <h2 class="section__title">Projects</h2>
-        <ul class="projects__list">
-          
-          <li class="projects__item">
-            <div class="projects__item-content">
-              <h3 class="projects__item-title">Instagram clone</h3>
-              <p class="projects__item-description">Clone of popular social network - Instagram. Built using React and
-                Firebase</p>
-              <div class="projects__item-links">
-                <a target="_blank" href="https://instagram-clone-bffad.web.app/" class="projects__item-link">
-                  Live Preview
-                </a>
-                <a target="_blank" href="https://github.com/avetisovi/instagram-clone"
-                  class="projects__item-link">
-                  GitHub Repo
-                </a>
+    </section>
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="projects__inner">
+          <h2 class="section__title">Projects</h2>
+          <ul class="projects__list">
+            <li class="projects__item">
+              <div class="projects__item-content">
+                <h3 class="projects__item-title">Instagram clone</h3>
+                <p class="projects__item-description">
+                  Clone of popular social network - Instagram. Built using React
+                  and Firebase
+                </p>
+                <div class="projects__item-links">
+                  <a
+                    target="_blank"
+                    href="https://instagram-clone-bffad.web.app/"
+                    class="projects__item-link"
+                  >
+                    Live Preview
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/avetisovi/instagram-clone"
+                    class="projects__item-link"
+                  >
+                    GitHub Repo
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="projects__item-img">
-              <img src="images/projects/instagram-clone.jpg" alt="project screenshot">
-            </div>
-          </li>
-          <li class="projects__item">
-            <div class="projects__item-content">
-              <h3 class="projects__item-title">ToDo List</h3>
-              <p class="projects__item-description">Web-site that allows to create projects and todos form them, store
-                todos by date and save them with google account or localstorage. Built using Webpack and Firebase </p>
-              <div class="projects__item-links">
-                <a target="_blank" href="https://todo-list-2a7c3.web.app/" class="projects__item-link">
-                  Live Preview
-                </a>
-                <a target="_blank" href="https://github.com/avetisovi/todo-list" class="projects__item-link">
-                  GitHub Repo
-                </a>
+              <div class="projects__item-img">
+                <img
+                  src="images/projects/instagram-clone.jpg"
+                  alt="project screenshot"
+                />
               </div>
-            </div>
-            <div class="projects__item-img">
-              <img src="images/projects/todo-list.jpg" alt="project screenshot">
-            </div>
-          </li>
-          <li class="projects__item">
-            <div class="projects__item-content">
-              <h3 class="projects__item-title">Shopping Cart</h3>
-              <p class="projects__item-description">Application that emulates shopping cart behavior.
-                Design template from <a href="https://www.apple.com/" target="_blank">Apple</a>
-                Built using React
-              </p>
-              <div class="projects__item-links">
-                <a target="_blank" href="https://avetisovi.github.io/shopping-cart/#/" class="projects__item-link">
-                  Live Preview
-
-                </a>
-                <a target="_blank" href="https://github.com/avetisovi/shopping-cart" class="projects__item-link">
-                  GitHub Repo
-                </a>
+            </li>
+            <li class="projects__item">
+              <div class="projects__item-content">
+                <h3 class="projects__item-title">ToDo List</h3>
+                <p class="projects__item-description">
+                  Web-site that allows to create projects and todos form them,
+                  store todos by date and save them with google account or
+                  localstorage. Built using Webpack and Firebase
+                </p>
+                <div class="projects__item-links">
+                  <a
+                    target="_blank"
+                    href="https://todo-list-2a7c3.web.app/"
+                    class="projects__item-link"
+                  >
+                    Live Preview
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/avetisovi/todo-list"
+                    class="projects__item-link"
+                  >
+                    GitHub Repo
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="projects__item-img">
-              <img src="images/projects/shopping-cart.png" alt="project screenshot">
-            </div>
-          </li>
-          <li class="projects__item">
-            <div class="projects__item-content">
-              <h3 class="projects__item-title">Weather App</h3>
-              <p class="projects__item-description">Web-site that allows to see weather of typed location or current
-                one. Built using webpack</p>
-              <div class="projects__item-links">
-                <a target="_blank" href="https://avetisovi.github.io/weather-app/" class="projects__item-link">
-                  Live Preview
-
-                </a>
-                <a target="_blank" href="https://github.com/avetisovi/weather-app" class="projects__item-link">
-                  GitHub Repo
-
-                </a>
+              <div class="projects__item-img">
+                <img
+                  src="images/projects/todo-list.jpg"
+                  alt="project screenshot"
+                />
               </div>
-            </div>
-            <div class="projects__item-img">
-              <img src="images/projects/weather-app.jpg" alt="project screenshot">
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li class="projects__item">
+              <div class="projects__item-content">
+                <h3 class="projects__item-title">Shopping Cart</h3>
+                <p class="projects__item-description">
+                  Application that emulates shopping cart behavior. Design
+                  template from
+                  <a href="https://www.apple.com/" target="_blank">Apple</a>
+                  Built using React
+                </p>
+                <div class="projects__item-links">
+                  <a
+                    target="_blank"
+                    href="https://avetisovi.github.io/shopping-cart/#/"
+                    class="projects__item-link"
+                  >
+                    Live Preview
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/avetisovi/shopping-cart"
+                    class="projects__item-link"
+                  >
+                    GitHub Repo
+                  </a>
+                </div>
+              </div>
+              <div class="projects__item-img">
+                <img
+                  src="images/projects/shopping-cart.png"
+                  alt="project screenshot"
+                />
+              </div>
+            </li>
+            <li class="projects__item">
+              <div class="projects__item-content">
+                <h3 class="projects__item-title">Weather App</h3>
+                <p class="projects__item-description">
+                  Web-site that allows to see weather of typed location or
+                  current one. Built using webpack
+                </p>
+                <div class="projects__item-links">
+                  <a
+                    target="_blank"
+                    href="https://avetisovi.github.io/weather-app/"
+                    class="projects__item-link"
+                  >
+                    Live Preview
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/avetisovi/weather-app"
+                    class="projects__item-link"
+                  >
+                    GitHub Repo
+                  </a>
+                </div>
+              </div>
+              <div class="projects__item-img">
+                <img
+                  src="images/projects/weather-app.jpg"
+                  alt="project screenshot"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </section>
-  <footer class="footer" id="footer">
-    <div class="container">
-      <h2 class="section__title footer__title">Contact</h2>
-      <p class="footer__text">Please get in touch if you have an opportunity to share, or would like to discuss
-        anything.</p>
-      <div class="footer__contact">
-        <a class="footer__phone" href="tel:+995591757664">
-          <img src="images/contact/phone.svg" alt="">
-          591 75 76 64
-        </a>
-        <br>
-        <a class="footer__mail" href="mailto:tolikatolika794@gmail.com">
-          <img src="images/contact/mail.svg" alt="">
-          tolikatolika794@gmail.com
-        </a>
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://github.com/avetisovi" class="footer__social-link">
-              <img class="footer__social-img" src="images/contact/github.svg" alt="github link">
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://www.linkedin.com/in/anatoli-avetisovi-a481a922b"
-              class="footer__social-link">
-              <img class="footer__social-img" src="images/contact/linkedin.svg" alt="linkedin link">
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a class="footer__social-link" href="https://www.facebook.com/profile.php?id=100009542965331"
-              class="footer__social-link">
-              <img class="footer__social-img" src="images/contact/facebook.svg" alt="facebook link">
-            </a>
-          </li>
-        </ul>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <h2 class="section__title footer__title">Contact</h2>
+        <p class="footer__text">
+          Please get in touch if you have an opportunity to share, or would like
+          to discuss anything.
+        </p>
+        <div class="footer__contact">
+          <a class="footer__phone" href="tel:+995591757664">
+            <img src="images/contact/phone.svg" alt="" />
+            591 75 76 64
+          </a>
+          <br />
+          <a class="footer__mail" href="mailto:tolikatolika794@gmail.com">
+            <img src="images/contact/mail.svg" alt="" />
+            tolikatolika794@gmail.com
+          </a>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a
+                class="footer__social-link"
+                href="https://github.com/avetisovi"
+                class="footer__social-link"
+              >
+                <img
+                  class="footer__social-img"
+                  src="images/contact/github.svg"
+                  alt="github link"
+                />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                class="footer__social-link"
+                href="https://www.linkedin.com/in/anatoli-avetisovi-a481a922b"
+                class="footer__social-link"
+              >
+                <img
+                  class="footer__social-img"
+                  src="images/contact/linkedin.svg"
+                  alt="linkedin link"
+                />
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                class="footer__social-link"
+                href="https://www.facebook.com/profile.php?id=100009542965331"
+                class="footer__social-link"
+              >
+                <img
+                  class="footer__social-img"
+                  src="images/contact/facebook.svg"
+                  alt="facebook link"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </footer>
-  <script src="js/index.js"></script>
-</body>
-
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
 </html>
